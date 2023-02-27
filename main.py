@@ -15,7 +15,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__()
         self.setupUi(self)
         self.setWindowTitle("PyEsdras - Sistema de cadastro v1.0")
-        appIcon = QIcon(u"")
+        appIcon = QIcon(u"icons/logo4.png")
         self.setWindowIcon(appIcon)
 
         ########TOGGLE BUTTON CHAMA MENU
@@ -74,16 +74,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         db.connect()
 
         fullDataSet = (
-            self.txt_cnpj_contr.text(),
-            self.txt_nome_contr.text(),
-            self.txt_logradouro.text(),
-            self.txt_num.text(),
-            self.txt_complemento.text(),
-            self.txt_bairro.text(),
-            self.txt_mun.text(),
-            self.txt_uf.text(),
-            self.txt_cep.text(),
-            self.txt_tel_contr.text(),
+            self.txt_cnpj_contr.text(), self.txt_nome_contr.text(), self.txt_logradouro.text(), self.txt_num.text(), self.txt_complemento.text(),
+            self.txt_bairro.text(), self.txt_mun.text(), self.txt_uf.text(), self.txt_cep.text(), self.txt_tel_contr.text(),
             self.txt_email_contr.text()
 
         )
